@@ -54,7 +54,8 @@
 char *TCID = "waitpid13";
 int TST_TOTAL = 1;
 
-volatile int intintr;
+volatile int intintr;  
+//volatile 修饰词告诉编辑器编译的时候不需要有优化。
 static void setup(void);
 static void cleanup(void);
 static void inthandlr();
